@@ -1,0 +1,10 @@
+@import "mixins";
+
+main {
+    padding: 0 1em;
+
+    @include breakpoint(lg) {
+        display: flex;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,45 @@
+@import "mixins";
+@import "colors";
+
+article {
+    @include breakpoint(lg) {
+        width: calc(80% - 1em);
+        margin-right: 1em;
+    }
+
+    .cards {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        @include breakpoint(md) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        li {
+            border: 5px solid $black;
+            margin-bottom: 1em;
+
+            @include breakpoint(md) {
+                max-width: calc(50% - 1em);
+                margin-right: 1em;
+            }
+
+            @include breakpoint(lg) {
+                max-width: calc(33% - 1em);
+            }
+
+            h2 {
+                background-color: $dark-grey;
+                color: $white;
+                margin: 0;
+                padding: 0.5em 1em;
+            }
+
+            .inner {
+                padding: 0.5em 1em;
+            }
+        }
+    }
+}
