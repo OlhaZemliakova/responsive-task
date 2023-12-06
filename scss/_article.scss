@@ -22,12 +22,12 @@ article {
             margin-bottom: 1em;
 
             @include breakpoint(md) {
-                max-width: calc(50% - 1em);
+                width: calc(50% - 1em);
                 margin-right: 1em;
             }
 
             @include breakpoint(lg) {
-                max-width: calc(33% - 1em);
+                width: calc(33% - 1em);
             }
 
             h2 {
